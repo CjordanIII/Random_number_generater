@@ -1,0 +1,169 @@
+:root{
+    --primarycolor:#ECFDF5;
+    --secondarycolor:#273549;
+    --tertiarycolor:#6B7280;
+    --line:#D5D4D8;
+
+}
+
+.dark-theme{
+    --primarycolor:#1F2937;
+    --secondarycolor:#FFFFFF;
+    --line:#2F3E53;
+}
+
+
+
+@font-face{
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf")
+}
+@font-face{
+    font-family: "Karla";
+    src: url("/fonts/Karla-VariableFont_wght.ttf")
+}
+
+body{
+    background-color: #1C1C1C;
+
+
+}
+
+
+.back-ground{
+    width: 550px;
+    height: 550px;
+    background-color: var(--primarycolor);
+    margin-top: 179px;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    box-shadow: 0 0 1px 1px white;
+    
+}
+
+#moon{
+    position:absolute;
+    width:50px;
+    height:50px;
+    transition-duration: .4s;
+    opacity: .8;
+
+}
+#moon:hover{
+    scale:0.9;
+}
+#moon:active{
+    scale:.8;
+}
+
+
+
+#header1{
+    color: var(--secondarycolor);
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: Karla;
+    font-weight: bolder;
+}
+#header2{
+    color:#10B981;
+    margin-bottom: auto;
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: Karla;
+}
+.words{
+    padding-top:115px;
+    padding-right: 144px;
+    padding-left: 52px;
+    font-weight: bold;
+
+}
+#cap1{
+    color: var(--tertiarycolor);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Inter;
+
+}
+
+#password-gen{
+    background:#10B981;
+    border:none;
+    padding:9px 17px 9px 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Inter;
+    margin-left: 67px;
+    margin-top: 51px;
+    margin-right: 307px;
+    border-radius:6px ;
+    color:var(--secondarycolor);
+    cursor: pointer;
+    user-select: none;
+    transition-duration:.4s;
+}
+
+
+#password-gen:hover{
+  transition-duration: .1s;
+  background-color:#10b981a1;
+  scale: 1.03;
+}
+
+
+#password-gen:active{
+    opacity:3;
+    transition: 0s;
+    scale: 1.01;
+    background-color:#1C1C1C;
+    transition-duration: .2s;
+}
+
+#line{
+    margin:35px 52px auto 52px;
+    border-bottom: 1px solid  var(--line);
+}
+.blank-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 35px auto 115px auto;
+}
+#box1{
+    border-radius: 6px;
+    width: 220px;
+    height: 39px;
+    background-color: var(--secondarycolor);
+}
+#box2{
+    border-radius: 6px;
+    width: 220px;
+    height: 39px;
+    background-color: var(--secondarycolor);
+}
+
+#randompass1{
+    text-align: center;
+    padding-top: 9.75px;
+    padding-bottom: 9.75px;
+    margin: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #5DEF92;
+    user-select: all;
+}
+#randompass2{
+    text-align: center;
+    padding-top: 9.75px;
+    padding-bottom: 9.75px;
+    margin: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #5DEF92;
+    user-select: all;
+}
