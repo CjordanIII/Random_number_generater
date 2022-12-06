@@ -29,8 +29,8 @@ function randompassword(){
         character.unshift(char)
         character2.unshift(char2)
     }
-   passwordspace.textContent = character
-   passwordspace2.textContent = character2
+   passwordspace.textContent = character.join("");
+   passwordspace2.textContent = character2.join("");
 
 }
 
@@ -40,8 +40,9 @@ icon.onclick= function(){
     document.body.classList.toggle("dark-theme")
     if(document.body.classList.contains("dark-theme")){
         icon.src ="icons/brightness-high-fill.svg"
-    }else{
-        icon.src="icons/moon-fill.svg"
+    }
+    else{
+        icon.src ="icons/moon-fill.svg"
     }
 }
 
